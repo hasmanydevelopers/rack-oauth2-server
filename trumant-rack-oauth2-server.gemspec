@@ -1,7 +1,7 @@
 $: << File.dirname(__FILE__) + "/lib"
 
 Gem::Specification.new do |spec|
-  spec.name           = "trumant-rack-oauth2-server"
+  spec.name           = "rack-oauth2-server"
   spec.version        = IO.read("VERSION")
   spec.author         = "Assaf Arkin"
   spec.email          = "assaf@labnotes.org"
