@@ -75,7 +75,10 @@ module Rack
             client.update_attributes(args)
             return client
           else
-            Client.create!(args)
+            client = Client.new(args)
+            client.id = args[:id] if args[:id]
+            client.save!
+            client
           end
         end
 
